@@ -1,65 +1,95 @@
-<div
-  class="bg-neutral-primary-soft border-default rounded-base w-full max-w-sm border p-6 shadow-xs"
->
-  <form action="#">
-    <h5 class="text-heading mb-6 text-xl font-semibold">
-      Sign in to our platform
-    </h5>
-    <div class="mb-4">
-      <label for="email" class="text-heading mb-2.5 block text-sm font-medium"
-        >Your email</label
-      >
-      <input
-        type="email"
-        id="email"
-        class="bg-neutral-secondary-medium border-default-medium text-heading rounded-base focus:ring-brand focus:border-brand placeholder:text-body block w-full border px-3 py-2.5 text-sm shadow-xs"
-        placeholder="example@company.com"
-        required
-      />
-    </div>
-    <div>
-      <label
-        for="password"
-        class="text-heading mb-2.5 block text-sm font-medium"
-        >Your password</label
-      >
-      <input
-        type="password"
-        id="password"
-        class="bg-neutral-secondary-medium border-default-medium text-heading rounded-base focus:ring-brand focus:border-brand placeholder:text-body block w-full border px-3 py-2.5 text-sm shadow-xs"
-        placeholder="•••••••••"
-        required
-      />
-    </div>
-    <div class="my-6 flex items-start">
-      <div class="flex items-center">
-        <input
-          id="checkbox-remember"
-          type="checkbox"
-          value=""
-          class="border-default-medium bg-neutral-secondary-medium focus:ring-brand-soft h-4 w-4 rounded-xs border focus:ring-2"
-        />
-        <label
-          for="checkbox-remember"
-          class="text-heading ms-2 text-sm font-medium"
-          >Remember me</label
-        >
-      </div>
-      <a
-        href="#"
-        class="text-fg-brand ms-auto text-sm font-medium hover:underline"
-        >Lost Password?</a
-      >
-    </div>
-    <button
-      type="submit"
-      class="bg-brand hover:bg-brand-strong focus:ring-brand-medium rounded-base mb-3 box-border w-full border border-transparent px-4 py-2.5 text-sm leading-5 font-medium text-white shadow-xs focus:ring-4 focus:outline-none"
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Noroff Frameworks project, using Vite and Tailwind CSS"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>tw-project</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div
+      class="mx-auto mt-25 w-full max-w-160 rounded-lg border border-(--color-border) bg-linear-to-b from-(--color-picker) from-0% via-(--color-picker-secondary) via-25% to-(--color-surface) to-100% p-12 text-white shadow-md"
     >
-      Login to your account
-    </button>
-    <div class="text-body text-sm font-medium">
-      Not registered?
-      <a href="#" class="text-fg-brand hover:underline">Create account</a>
+      <form action="/profile/index.html">
+        <h5 class="logo mb-3 text-4xl tracking-tight text-(--color-primary)">
+          SIGN IN TO OUR PLATFORM
+        </h5>
+        <div class="mb-4">
+          <label
+            for="email"
+            class="text-heading mb-2.5 block text-sm font-medium"
+            >Your email</label
+          >
+          <input
+            type="email"
+            id="email"
+            class="bg-neutral-secondary-medium border-default-medium text-heading rounded-base focus:ring-brand focus:border-brand placeholder:text-body block w-full border px-3 py-2.5 text-sm shadow-xs"
+            placeholder="example@company.com"
+            required
+          />
+        </div>
+        <div>
+          <label
+            for="password"
+            class="text-heading mb-2.5 block text-sm font-medium"
+            >Your password</label
+          >
+          <input
+            type="password"
+            id="password"
+            minlength="8"
+            required
+            id="password"
+            class="bg-neutral-secondary-medium border-default-medium text-heading rounded-base focus:ring-brand focus:border-brand placeholder:text-body block w-full border px-3 py-2.5 text-sm shadow-xs"
+            placeholder="•••••••••"
+            required
+          />
+        </div>
+        <div class="my-6 flex items-start">
+          <div class="flex items-center">
+            <input
+              id="checkbox-remember"
+              type="checkbox"
+              value=""
+              class="border-default-medium bg-neutral-secondary-medium focus:ring-brand-soft h-4 w-4 rounded-xs border focus:ring-2"
+            />
+            <label
+              for="checkbox-remember"
+              class="text-heading ms-2 text-sm font-medium"
+              >Remember me</label
+            >
+          </div>
+          <a
+            href="#"
+            class="text-fg-brand ms-auto text-sm font-medium hover:underline"
+            >Lost Password?</a
+          >
+        </div>
+        <button
+          type="submit"
+          class="bg-brand hover:bg-brand-strong focus:ring-brand-medium rounded-base mb-3 box-border w-full border border-transparent px-4 py-2.5 text-sm leading-5 font-medium text-white shadow-xs focus:ring-4 focus:outline-none"
+        >
+          Login to your account
+        </button>
+        <div class="text-body text-sm font-medium">
+          Not registered?
+          <a href="/register/index.html" class="text-fg-brand hover:underline"
+            >Create account</a
+          >
+        </div>
+      </form>
     </div>
-  </form>
-</div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

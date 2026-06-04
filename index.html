@@ -17,67 +17,27 @@
     <title>tw-project</title>
   </head>
   <body>
-    <nav
-      class="flex items-center justify-between border-b border-[var(--color-border)] bg-[var(--color-bg)] p-7"
-    >
-      <div class="logo text-4xl font-normal text-white">The Wire™</div>
-
-      <div class="flex gap-8">
-        <a
-          href="#"
-          class="rounded-md border border-[var(--color-border)] px-4 py-2 text-white hover:bg-white/10"
-        >
-          Login
-        </a>
-
-        <a
-          href="#"
-          class="rounded-md border border-[var(--color-border)] px-4 py-2 text-white hover:bg-white/10"
-        >
-          Register
-        </a>
-      </div>
-    </nav>
+    <div id="header"></div>
 
     <div
-      class="mx-auto mt-20 max-w-lg rounded-lg border border-[var(--color-border)] bg-[var(--color-surface-card)] p-6 text-white shadow-md"
+      class="mx-auto mt-25 w-full max-w-160 rounded-lg border border-(--color-border) bg-linear-to-b from-(--color-picker) from-0% via-(--color-picker-secondary) via-25% to-(--color-surface) to-100% p-12 text-white shadow-md"
     >
-      <h5 class="logo mb-3 text-4xl tracking-tight text-[var(--color-primary)]">
-        Welcome to the Wire
-      </h5>
-
-      <p class="mb-6 text-base text-[var(--color-text-muted)]">
+      <h2 class="logo mb-3 text-4xl tracking-tight text-(--color-primary)">
+        WELCOME TO THE WIRE
+      </h2>
+      <h3 class="mb-4 text-2xl text-white/90">
+        Follow posts, join the conversation, and share your own updates.
+      </h3>
+      <p class="mb-6 text-lg text-(--color-text-muted)">
         Log in to explore the feed, react to posts, comment on discussions, and
         connect with other users.
       </p>
 
       <div class="flex gap-4">
-        <a
-          href="#"
-          class="rounded-md border border-[var(--color-border)] px-4 py-2 text-white hover:bg-white/10"
-        >
-          Login
-        </a>
-
-        <a
-          href="#"
-          class="rounded-md border border-[var(--color-border)] px-4 py-2 text-white hover:bg-white/10"
-        >
-          Register
-        </a>
+        <a href="/login/index.html" class="btn btn-login">Login</a>
+        <a href="/register/index.html" class="btn btn-register">Register</a>
       </div>
     </div>
-    <!-- Hero section --
-    <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
-      <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-        <h2 class="mt-10 text-center text-4xl leading-tight text-purple-600">
-          Welcome to the wire
-        </h2>
-        <p class="mt-2 text-center text-lg text-white">
-          Follow posts, join the conversation, and share your own updates.
-        </p>
-      </div>
-    </div>  End of hero section -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
