@@ -77,7 +77,9 @@
     border: 1px solid var(--color-border);
     background-color: var(--color-surface);
     box-shadow: var(--shadow-md);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
   }
 
   .wire-card:hover {
@@ -124,4 +126,20 @@ body {
 
 .display-font {
   font-family: var(--font-family-display);
+}
+.wire-panel {
+  max-width: 64rem;
+  margin-inline: auto;
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+
+  background: linear-gradient(
+    180deg,
+    var(--color-picker) 0%,
+    var(--color-picker-secondary) 25%,
+    var(--color-surface) 100%
+  );
+
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
 }

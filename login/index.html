@@ -22,7 +22,7 @@
     <div
       class="mx-auto mt-25 w-full max-w-160 rounded-lg border border-(--color-border) bg-linear-to-b from-(--color-picker) from-0% via-(--color-picker-secondary) via-25% to-(--color-surface) to-100% p-12 text-white shadow-md"
     >
-      <form action="../profile/" method="GET">
+      <form action="../profile/" method="GET" autocomplete="on">
         <h5 class="logo mb-3 text-4xl tracking-tight text-(--color-primary)">
           SIGN IN TO OUR PLATFORM
         </h5>
@@ -36,7 +36,8 @@
             type="email"
             id="email"
             name="email"
-            autocomplete="username"
+            autocomplete="email"
+            value="miastu05180@stud.noroff.no"
             class="bg-neutral-secondary-medium border-default-medium text-heading rounded-base focus:ring-brand focus:border-brand placeholder:text-body block w-full border px-3 py-2.5 text-sm shadow-xs"
             placeholder="example@company.com"
             required
@@ -69,7 +70,7 @@
             <label
               for="checkbox-remember"
               class="text-heading ms-2 text-sm font-medium"
-              >Remember me</label
+              >Keep me signed in</label
             >
           </div>
           <a
@@ -80,7 +81,7 @@
         </div>
         <button
           type="submit"
-          class="bg-brand hover:bg-brand-strong focus:ring-brand-medium rounded-base mb-3 box-border w-full border border-transparent px-4 py-2.5 text-sm leading-5 font-medium text-white shadow-xs focus:ring-4 focus:outline-none"
+          class="w-full rounded-lg bg-purple-700 px-4 py-3 font-medium text-white transition hover:bg-purple-600"
         >
           Login to your account
         </button>
