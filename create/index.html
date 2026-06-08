@@ -16,4 +16,82 @@
 
     <title>tw-project</title>
   </head>
+  <body>
+    <div id="header"></div>
+
+    <main class="mx-auto max-w-6xl px-6 py-10">
+      <div class="wire-panel">
+        <form action="../feed/" method="GET">
+          <h1 class="logo mb-3 text-4xl tracking-tight text-(--color-primary)">
+            CREATE A POST
+          </h1>
+
+          <p class="mb-6 text-(--color-text-muted)">
+            Share your thoughts with The Wire™ community.
+          </p>
+
+          <div class="mb-4">
+            <label
+              for="title"
+              class="text-heading mb-2.5 block text-sm font-medium"
+            >
+              Post title
+            </label>
+
+            <input
+              type="text"
+              id="title"
+              name="title"
+              required
+              maxlength="100"
+              placeholder="My first post..."
+              class="bg-neutral-secondary-medium border-default-medium text-heading rounded-base block w-full border px-3 py-2.5 text-sm"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label
+              for="content"
+              class="text-heading mb-2.5 block text-sm font-medium"
+            >
+              Post content
+            </label>
+
+            <textarea
+              id="content"
+              name="content"
+              rows="8"
+              required
+              placeholder="What's happening today?"
+              class="bg-neutral-secondary-medium border-default-medium text-heading rounded-base block w-full border px-3 py-2.5 text-sm"
+            ></textarea>
+          </div>
+
+          <div class="mb-6">
+            <label
+              for="image"
+              class="text-heading mb-2.5 block text-sm font-medium"
+            >
+              Image URL (optional)
+            </label>
+
+            <input
+              type="url"
+              id="image"
+              name="image"
+              placeholder="https://example.com/image.jpg"
+              class="bg-neutral-secondary-medium border-default-medium text-heading rounded-base block w-full border px-3 py-2.5 text-sm"
+            />
+          </div>
+
+          <div class="flex gap-4">
+            <button type="submit" class="btn btn-login">Publish Post</button>
+
+            <a href="../feed/" class="btn btn-register"> Cancel </a>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
