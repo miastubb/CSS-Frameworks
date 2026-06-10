@@ -16,42 +16,138 @@
     />
 
     <title>tw-project</title>
-    <script type="module" crossorigin src="/CSS-Frameworks/assets/main-MovWpZwH.js"></script>
-    <link rel="stylesheet" crossorigin href="/CSS-Frameworks/assets/main-BNwCidEA.css">
+    <script type="module" crossorigin src="/CSS-Frameworks/assets/main-Bws7_NWc.js"></script>
+    <link rel="stylesheet" crossorigin href="/CSS-Frameworks/assets/main-CeQw4E_P.css">
   </head>
 
   <body>
-    <nav class="flex items-center justify-between bg-[#0d0b14] p-7">
-      <div class="logo text-4xl font-normal text-white">The Wire™</div>
-      <div class="flex gap-8">
-        <a href="#" class="text-white hover:text-gray-400">Login</a>
-        <a href="#" class="text-white hover:text-gray-400">Register</a>
-      </div>
-    </nav>
-    <div class="grid grid-cols-2 gap-2">
-      <div class="bg-black p-4 text-white">Item 1</div>
-      <div class="bg-black p-4 text-white">Item 2</div>
-    </div>
-    <div class="grid grid-cols-2 gap-6">
-      <div class="rounded-lg border bg-white p-6">
-        <h3 class="mb-2 text-lg font-bold">Card Title 1</h3>
-        <p class="text-gray-600">Some description text for this card.</p>
-      </div>
-      <div class="rounded-lg border bg-white p-6">
-        <h3 class="mb-2 text-lg font-bold">Card Title 2</h3>
-        <p class="text-gray-600">Some description text for this card.</p>
-      </div>
-      <div class="rounded-lg border bg-white p-6">
-        <h3 class="mb-2 text-lg font-bold">Card Title 3</h3>
-        <p class="text-gray-600">
-          Some description text for this card with longer content to demonstrate
-          how it wraps and adjusts the layout accordingly.
+    <div id="header"></div>
+
+    <main class="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
+      <section class="mb-8">
+        <p class="mb-2 text-sm tracking-widest text-purple-300 uppercase">
+          Feed
         </p>
-      </div>
-      <div class="rounded-lg border bg-white p-6">
-        <h3 class="mb-2 text-lg font-bold">Card Title 4</h3>
-        <p class="text-gray-600">Some description text for this card.</p>
-      </div>
-    </div>
+
+        <h1 class="logo mb-3 text-4xl tracking-tight text-(--color-primary)">
+          THE WIRE FEED
+        </h1>
+
+        <p class="max-w-2xl text-(--color-text-muted)">
+          Follow updates, thoughts, and small wins from The Wire™ community.
+        </p>
+      </section>
+
+      <section class="wire-panel mb-8">
+        <form class="grid gap-4 md:grid-cols-[1fr_auto_auto]">
+          <input
+            type="search"
+            name="search"
+            placeholder="Search posts..."
+            class="w-full rounded-lg border border-(--color-border) bg-(--color-surface) px-4 py-3 text-white placeholder:text-gray-500"
+          />
+
+          <select
+            name="sort"
+            class="rounded-lg border border-(--color-border) bg-(--color-surface) px-4 py-3 text-white"
+          >
+            <option>Newest first</option>
+            <option>Most liked</option>
+            <option>Most commented</option>
+          </select>
+
+          <a href="../create/" class="btn btn-login text-center">Create post</a>
+        </form>
+      </section>
+
+      <section class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <article class="wire-card feed-card">
+          <img
+            src="/CSS-Frameworks/assets/mia-and-luna-DcE_8xRA.jpg"
+            alt="Mia and Luna"
+            class="h-56 w-full object-cover"
+          />
+
+          <div class="wire-card-content">
+            <p class="mb-2 text-sm text-purple-300">Mia Stubb-Olsen</p>
+            <h2 class="wire-card-title">My first post</h2>
+            <p class="wire-card-text">
+              Today I cleaned up the create page and added a first demo image
+              for the project.
+            </p>
+
+            <div class="mt-6 flex gap-4 text-sm text-gray-400">
+              <span>12 likes</span>
+              <span>4 comments</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="wire-card feed-card">
+          <img
+            src="/CSS-Frameworks/assets/tailwind-BIcf35hE.png"
+            alt="Tailwind docs"
+            class="h-56 w-full object-cover"
+          />
+
+          <div class="wire-card-content">
+            <p class="mb-2 text-sm text-purple-300">The Wire™</p>
+            <h2 class="wire-card-title">Tailwind progress</h2>
+            <p class="wire-card-text">
+              The profile page is now responsive, the header is reusable, and
+              the layout feels much cleaner.
+            </p>
+
+            <div class="mt-6 flex gap-4 text-sm text-gray-400">
+              <span>18 likes</span>
+              <span>7 comments</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="wire-card feed-card">
+          <img
+            src="/CSS-Frameworks/assets/luna-writing-CaLTsdST.jpg"
+            alt="Luna writing"
+            class="h-56 w-full object-cover"
+          />
+
+          <div class="wire-card-content">
+            <p class="mb-2 text-sm text-purple-300">Luna</p>
+            <h2 class="wire-card-title">Assistant on duty</h2>
+            <p class="wire-card-text">
+              Supervising the coding session from a safe distance, while
+              pretending not to care.
+            </p>
+
+            <div class="mt-6 flex gap-4 text-sm text-gray-400">
+              <span>24 likes</span>
+              <span>9 comments</span>
+            </div>
+          </div>
+        </article>
+        <article class="wire-card feed-card">
+          <img
+            src="/CSS-Frameworks/assets/docs-CMvH7xdP.png"
+            alt="Tailwind documentation"
+            class="h-56 w-full object-cover"
+          />
+
+          <div class="wire-card-content">
+            <p class="mb-2 text-sm text-purple-300">Steffen</p>
+            <h2 class="wire-card-title">configuring Vite</h2>
+            <p class="wire-card-text">
+              Finally got Tailwind configured after fighting with Vite for an
+              hour. Time to start building!
+            </p>
+
+            <div class="mt-6 flex gap-4 text-sm text-gray-400">
+              <span>24 likes</span>
+              <span>9 comments</span>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
   </body>
 </html>

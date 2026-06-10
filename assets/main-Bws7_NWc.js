@@ -5,8 +5,8 @@
         </a>
 
         <div class="flex gap-8">
-          <a href="${t}feed/" class="btn btn-login">Create Post</a>
-          <a href="${t}" class="btn btn-register">Logout</a>
+          <a href="${t}profile/" class="btn btn-login">Profile</a>
+          <a href="${t}logout/" class="btn btn-register">Logout</a>
         </div>
       </nav>
     `:`
@@ -20,4 +20,4 @@
           <a href="${t}register/" class="btn btn-register">Register</a>
         </div>
       </nav>
-    `}var t=`/CSS-Frameworks/assets/mia-and-pippin-BZjlCDQN.jpg`,n=document.querySelector(`#header`),r=[`/profile/`,`/feed/`].some(e=>window.location.pathname.includes(e));n&&(n.innerHTML=e(r));var i=document.querySelector(`#profile-image`);i&&(i.src=t);
+    `}var t=`/CSS-Frameworks/assets/mia-and-pippin-BZjlCDQN.jpg`,n=`/CSS-Frameworks/assets/mia-and-luna-DcE_8xRA.jpg`,r=document.querySelector(`#header`),i=[`/profile/`,`/feed/`,`/create/`].some(e=>window.location.pathname.includes(e));r&&(r.innerHTML=e(i));var a=document.querySelector(`#profile-image`);a&&(a.src=t);var o=document.querySelector(`#post-image`);o&&(o.src=n);
