@@ -6,7 +6,7 @@
 
         <div class="flex gap-8">
           <a href="${t}profile/" class="btn btn-login">Profile</a>
-          <a href="${t}logout/" class="btn btn-register">Logout</a>
+          <a href="${t}/" class="btn btn-register">Logout</a>
         </div>
       </nav>
     `:`
