@@ -12,6 +12,7 @@ export default defineConfig({
         login: resolve(__dirname, "login/index.html"),
         register: resolve(__dirname, "register/index.html"),
         profile: resolve(__dirname, "profile/index.html"),
+        create: resolve(__dirname, "create/index.html"),
         feed: resolve(__dirname, "feed/index.html"),
       },
     },

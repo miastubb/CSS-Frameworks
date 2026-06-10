@@ -72,14 +72,21 @@
               for="image"
               class="text-heading mb-2.5 block text-sm font-medium"
             >
-              Image URL (optional)
+              Post image
             </label>
 
+            <img
+              id="post-image"
+              src=""
+              alt="Mia and Luna"
+              class="mx-auto mb-4 w-full max-w-sm rounded-lg border border-(--color-border) object-cover"
+            />
+
             <input
-              type="url"
+              type="hidden"
               id="image"
               name="image"
-              placeholder="https://example.com/image.jpg"
+              value="mia-and-luna"
               class="bg-neutral-secondary-medium border-default-medium text-heading rounded-base block w-full border px-3 py-2.5 text-sm"
             />
           </div>
