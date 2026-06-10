@@ -10,7 +10,7 @@ export function createHeader(isLoggedIn = false) {
 
         <div class="flex gap-8">
           <a href="${base}profile/" class="btn btn-login">Profile</a>
-          <a href="${base}logout/" class="btn btn-register">Logout</a>
+          <a href="${base}/" class="btn btn-register">Logout</a>
         </div>
       </nav>
     `;
