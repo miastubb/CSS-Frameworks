@@ -38,14 +38,18 @@
 
       <section class="wire-panel mb-8">
         <form class="grid gap-4 md:grid-cols-[1fr_auto_auto]">
+          <label for="search" class="sr-only">Search posts</label>
           <input
+            id="search"
             type="search"
             name="search"
             placeholder="Search posts..."
             class="w-full rounded-lg border border-(--color-border) bg-(--color-surface) px-4 py-3 text-white placeholder:text-gray-500"
           />
 
+          <label for="sort" class="sr-only">Sort posts</label>
           <select
+            id="sort"
             name="sort"
             class="rounded-lg border border-(--color-border) bg-(--color-surface) px-4 py-3 text-white"
           >
