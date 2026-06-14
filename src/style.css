@@ -3,58 +3,159 @@
 :root {
   --color-bg: #0d0b14;
   --color-surface: #050608;
-  --color-surface-alt: #1b2230;
   --color-text: #f3f4f6;
   --color-text-muted: #b3bdd0;
   --color-border: #4f4664;
-  --color-surface-card: #0f1520;
-  --color-border-strong: #6b5a8e;
+
+  --color-picker: rgb(37, 11, 72);
+  --color-picker-secondary: rgb(17, 4, 39);
 
   --color-primary: #8c41ed;
   --color-primary-hover: #7c3aed;
-  --color-secondary: #3a0a64;
-  --color-login: #b082ec;
+  --color-secondary: #200537;
 
-  --color-success: #22c55e;
-  --color-danger: #ef4444;
-  --color-warning: #f59e0b;
-
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  --space-3: 0.75rem;
-  --space-4: 1rem;
-  --space-5: 1.5rem;
-  --space-6: 2rem;
-  --space-7: 3rem;
-  --space-8: 4rem;
-
-  --radius-sm: 0.375rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
-
-  --shadow-sm: 0 1px 2px #00000033;
   --shadow-md: 0 6px 16px #00000040;
 
-  --container-width: 1100px;
-
-  --font-family-base: Arial, sans-serif;
   --font-family-display: "Saira Stencil One", Arial, sans-serif;
-  --font-size-sm: 0.875rem;
-  --font-size-base: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.5rem;
-  --font-size-2xl: 2rem;
-  --font-size-3xl: 2.5rem;
 }
-.logo {
-  font-family: var(--font-family-display);
-  letter-spacing: 0.1em;
-}
+
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
 }
 
+.logo,
 .display-font {
   font-family: var(--font-family-display);
+}
+
+.logo {
+  letter-spacing: 0.1em;
+}
+
+@layer components {
+  .btn {
+    border: 1px solid var(--color-border);
+    border-radius: 0.375rem;
+    padding: 0.5rem 1rem;
+    color: white;
+  }
+
+  .btn-login {
+    background-color: var(--color-secondary);
+  }
+
+  .btn-login:hover {
+    border-color: var(--color-primary-hover);
+    background-color: var(--color-primary-hover);
+  }
+
+  .btn-register:hover,
+  .btn-feed:hover,
+  .btn-profile:hover {
+    border-color: var(--color-primary);
+  }
+
+  .wire-panel {
+    max-width: 64rem;
+    margin-inline: auto;
+    border: 1px solid var(--color-border);
+    border-radius: 0.75rem;
+    background: linear-gradient(
+      180deg,
+      var(--color-picker) 0%,
+      var(--color-picker-secondary) 25%,
+      var(--color-surface) 100%
+    );
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+  }
+
+  .wire-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+    background-color: var(--color-surface);
+    box-shadow: var(--shadow-md);
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .wire-card:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  }
+
+  .wire-card-image {
+    display: block;
+    width: 100%;
+    height: 16rem;
+    object-fit: cover;
+  }
+
+  .wire-card-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+
+  .wire-card-title {
+    margin-bottom: 0.5rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .wire-card-text {
+    color: #d1d5db;
+  }
+
+  .feed-card {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .feed-card .wire-card-content {
+    flex-grow: 1;
+  }
+
+  .feed-thumbnail {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+  }
+
+  .post-meta {
+    margin-top: auto;
+  }
+
+  @media (min-width: 768px) {
+    .wire-card {
+      flex-direction: row;
+    }
+
+    .feed-card {
+      flex-direction: column;
+    }
+
+    .wire-card-image {
+      width: 12rem;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .wire-panel {
+      padding: 1rem;
+    }
+
+    .wire-card-content {
+      padding: 1rem;
+    }
+  }
 }

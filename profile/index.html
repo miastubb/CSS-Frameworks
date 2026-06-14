@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Noroff Frameworks project, using Vite and Tailwind CSS"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>tw-project</title>
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <main class="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
+      <div class="wire-panel">
+        <section class="wire-card">
+          <img
+            id="profile-image"
+            src=""
+            alt="Mia and Pippin"
+            class="wire-card-image"
+          />
+
+          <div class="wire-card-content">
+            <p class="mb-2 text-sm tracking-widest text-purple-300 uppercase">
+              Profile
+            </p>
+
+            <h1 class="wire-card-title display-font">Mia Stubb-Olsen</h1>
+
+            <p class="wire-card-text">
+              Front-end development student building The Wire™ with Vite and
+              Tailwind.
+            </p>
+
+            <div class="mt-6 flex gap-6 text-sm text-gray-300">
+              <p><span class="font-bold text-white">24</span> posts</p>
+              <p><span class="font-bold text-white">128</span> followers</p>
+              <p><span class="font-bold text-white">75</span> following</p>
+            </div>
+
+            <div class="mt-6 flex flex-wrap gap-4">
+              <button type="button" class="btn btn-login whitespace-nowrap">
+                Follow
+              </button>
+              <a href="../feed/" class="btn btn-feed whitespace-nowrap"
+                >View feed</a
+              >
+              <a
+                href="../create/index.html"
+                class="btn btn-profile whitespace-nowrap"
+                >Create post</a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="mt-10">
+        <h2 class="display-font mb-6 text-3xl text-white">Recent posts</h2>
+
+        <div class="grid gap-6 md:grid-cols-2">
+          <article class="wire-card">
+            <div class="wire-card-content">
+              <h3 class="wire-card-title">Building with Tailwind</h3>
+              <p class="wire-card-text">
+                Today I worked on reusable components and cleaned up the profile
+                page.
+              </p>
+            </div>
+          </article>
+
+          <article class="wire-card">
+            <div class="wire-card-content">
+              <h3 class="wire-card-title">The Wire™ update</h3>
+              <p class="wire-card-text">
+                Header component is now reusable across the project.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
